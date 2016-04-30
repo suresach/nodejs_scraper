@@ -1,5 +1,7 @@
+//to install xml-parser module in windows type this in cmd:   npm install xml-parser
+
 var parse = require('xml-parser');
-var xml = fs.readFileSync('dara.html');
+var xml = fs.readFileSync('sample_table.html');
         var get_parser = parse(xml);
         var in_csv = [];
         get_parser.root.children.forEach(function(tr) {

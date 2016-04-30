@@ -1,5 +1,5 @@
 //to install xml-parser module in windows type this in cmd:   npm install xml-parser
-
+var fs = require('fs'); 
 var parse = require('xml-parser');
 var xml = fs.readFileSync('sample_table.html');
         var get_parser = parse(xml);

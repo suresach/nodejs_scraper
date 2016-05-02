@@ -44,7 +44,7 @@ cron.scheduleJob(rule, function(){
         var get_parser = parser(xml);
         var in_csv = [];
         get_parser.root.children.forEach(function(tr) {
-            data.push(tr.children.map(function(td) {
+            in_csv.push(tr.children.map(function(td) {
                 return td.content;
             }).join(','));
         });
